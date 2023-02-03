@@ -4,24 +4,22 @@
   "description": "Mumble protocol client library - websocket transport protocol",
   "main": "index.js",
   "scripts": {
-    "compile": "node_modules/.bin/babel -d lib/ src/",
-    "prepare": "npm run compile",
     "mocha": "node_modules/.bin/mocha --compilers js:babel-core/register",
     "test": "npm run compile && npm run mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johni0702/mumble-client-websocket.git"
+    "url": "git+https://github.com/WildanYR/mumble-client-websocket.git"
   },
   "author": "Jonas Herzig <me@johni0702.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johni0702/mumble-client-websocket/issues"
+    "url": "https://github.com/WildanYR/mumble-client-websocket/issues"
   },
-  "homepage": "https://github.com/johni0702/mumble-client-websocket#readme",
+  "homepage": "https://github.com/WildanYR/mumble-client-websocket#readme",
   "files": [
     "index.js",
-    "lib"
+    "src"
   ],
   "devDependencies": {
     "babel-cli": "^6.14.0",
@@ -32,8 +30,8 @@
     "standard": "^8.0.0"
   },
   "dependencies": {
-    "promise": "^7.1.1",
-    "websocket-stream": "^3.2.1"
+    "promise": "^8.3.0",
+    "websocket-stream": "^5.5.2"
   },
   "peerDependencies": {
     "mumble-client": "^1.0.0"
